@@ -62,7 +62,8 @@ const TodoList = () => {
       {/* 할 일을 입력받는 텍스트 필드입니다. */}
       <input
         type="text"
-        className={styles.itemInput}
+        /*className={styles.itemInput}*/
+        class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
         value={input}
         onChange={(e) => setInput(e.target.value)}
       />
